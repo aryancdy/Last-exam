@@ -1,0 +1,99 @@
+.csslider {
+    position: relative;
+}
+
+.csslider>input {
+    display: none;
+}
+.csslider>ul {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.csslider>ul>li {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    font-size: 15px;
+    font-size: initial;
+    line-height: normal;
+    transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+    vertical-align: top;
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+.csslider>.navigation {
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    z-index: 10;
+    margin-bottom: -10px;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    user-select: none;
+}
+
+.csslider>.navigation>div {
+    margin-left: -100%;
+}
+
+.csslider>.navigation label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 5px;
+    background: #fff;
+    width: 11px;
+    height: 11px;
+    transition: 0.5s all;
+}
+
+.csslider>.navigation label:hover:after {
+    opacity: 1;
+}
+
+.csslider>.navigation label:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -6px;
+    margin-top: -6px;
+    background: #FF5722;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    opacity: 0;
+    width: 13px;
+    height: 13px;
+    transition: 0.5s all;
+}
+
+.csslider.inside .navigation {
+    bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.csslider.inside .navigation label {
+    border: 1px solid #7e7e7e;
+}
+.csslider.inside .navigation {
+    bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.csslider.inside .navigation label {
+    border: 1px solid #7e7e7e;
+}
+
+
